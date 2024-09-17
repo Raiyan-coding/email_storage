@@ -1,0 +1,117 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Gradient header */
+header {
+    background: linear-gradient(90deg, #1f1f1f, #333, #4a4a4a);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Heading Styles */
+h1, h2 {
+    font-size: 2rem;
+    color: #f0f0f0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+
+/* Email Formats Section */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#email-formats ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Individual format card styling */
+#email-formats ul li {
+    background: linear-gradient(145deg, #333333, #444444);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideIn 0.8s ease;
+    position: relative; /* To position delete button */
+}
+
+/* Hover effects with animation */
+#email-formats ul li:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.7);
+}
+
+/* Format Content Styles */
+#email-formats ul li .content {
+    text-align: left;
+    margin: 10px 0;
+}
+
+/* Button Styles */
+button {
+    padding: 12px;
+    background: linear-gradient(45deg, #1DB954, #1ed760);
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: linear-gradient(45deg, #1ed760, #2ae672);
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.7);
+}
+
+/* Add Format Form Styling */
+#add-format {
+    margin-top: 30px;
+}
+
+form label, form input, form textarea, form button {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+form input, form textarea {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}

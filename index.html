@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Formats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Email Formats</h1>
+    </header>
+
+    <main>
+        <section id="email-formats">
+            <h2>Stored Email Formats</h2>
+            <ul id="formats-list">
+                <!-- Email formats will be displayed here -->
+            </ul>
+        </section>
+
+        <section id="add-format">
+            <h2>Add New Email Format</h2>
+            <form id="format-form">
+                <label for="format-name">Format Name:</label>
+                <input type="text" id="format-name" required>
+                
+                <label for="format-content">Email Content:</label>
+                <textarea id="format-content" rows="5" required></textarea>
+                
+                <button type="submit">Add Format</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
